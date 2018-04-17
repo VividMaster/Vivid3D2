@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{073B5EC1-1159-4AA0-9D02-82919D7C9829}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Vivid3D</RootNamespace>
+    <AssemblyName>VividEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\VividEngine.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App\VApp.cs" />
+    <Compile Include="Cam\VCam.cs" />
+    <Compile Include="Crypto\VCrypto.cs" />
+    <Compile Include="Data\VInfoMap.cs" />
+    <Compile Include="Data\VMesh.cs" />
+    <Compile Include="Data\VVertex3D.cs" />
+    <Compile Include="Data\VVertexData.cs" />
+    <Compile Include="Draw\Pen.cs" />
+    <Compile Include="Effect\FXG.cs" />
+    <Compile Include="Effect\VEDepth.cs" />
+    <Compile Include="Effect\VEffect.cs" />
+    <Compile Include="Effect\VEMultiPass.cs" />
+    <Compile Include="Enviro\VEnvRenderer.cs" />
+    <Compile Include="Font\VFont.cs" />
+    <Compile Include="Font\VFontRenderer.cs" />
+    <Compile Include="FrameBuffer\VFrameBuffer.cs" />
+    <Compile Include="FrameBuffer\VFrameBufferCube.cs" />
+    <Compile Include="Import\VAssImpImp.cs" />
+    <Compile Include="Import\VImport.cs" />
+    <Compile Include="Import\VImporter.cs" />
+    <Compile Include="Input\VInput.cs" />
+    <Compile Include="Lighting\VLight.cs" />
+    <Compile Include="Material\VMaterial.cs" />
+    <Compile Include="PostProcess\Processes\VPPBlur.cs" />
+    <Compile Include="PostProcess\VPostProcess.cs" />
+    <Compile Include="PostProcess\VPostProcessRenderer.cs" />
+    <Compile Include="Prim\VPrimGen.cs" />
+    <Compile Include="Process\VProcess.cs" />
+    <Compile Include="Scene\VCam.cs" />
+    <Compile Include="Scene\VSceneEntity.cs" />
+    <Compile Include="Scene\VSceneGraph.cs" />
+    <Compile Include="Scene\VSceneNode.cs" />
+    <Compile Include="Sound\VSoundSys.cs" />
+    <Compile Include="Speech\VTalk.cs" />
+    <Compile Include="State\VAppState.cs" />
+    <Compile Include="State\VStateManager.cs" />
+    <Compile Include="Texture\VTex2D.cs" />
+    <Compile Include="Texture\VTexBase.cs" />
+    <Compile Include="Texture\VTexCube.cs" />
+    <Compile Include="Texture\VTexDepth.cs" />
+    <Compile Include="Texture\VTextureUtil.cs" />
+    <Compile Include="Transient\VTrans.cs" />
+    <Compile Include="UI\UIEvent.cs" />
+    <Compile Include="UI\UIEventHandler.cs" />
+    <Compile Include="UI\UIItem.cs" />
+    <Compile Include="UI\UISKin.cs" />
+    <Compile Include="UI\UISkins\SkinNeonBlue.cs" />
+    <Compile Include="UI\UISys.cs" />
+    <Compile Include="UI\UIWidget.cs" />
+    <Compile Include="UI\UIWidgets\UIButton.cs" />
+    <Compile Include="UI\UIWidgets\UIDragZone.cs" />
+    <Compile Include="UI\UIWidgets\UIFileRequest.cs" />
+    <Compile Include="UI\UIWidgets\UIGroup.cs" />
+    <Compile Include="UI\UIWidgets\UIImage.cs" />
+    <Compile Include="UI\UIWidgets\UILabel.cs" />
+    <Compile Include="UI\UIWidgets\UIList.cs" />
+    <Compile Include="UI\UIWidgets\UIMenu.cs" />
+    <Compile Include="UI\UIWidgets\UIMenuItem.cs" />
+    <Compile Include="UI\UIWidgets\UIPanel.cs" />
+    <Compile Include="UI\UIWidgets\UIPatch.cs" />
+    <Compile Include="UI\UIWidgets\UIScrollBarV.cs" />
+    <Compile Include="UI\UIWidgets\UISplitterH.cs" />
+    <Compile Include="UI\UIWidgets\UISplitterV.cs" />
+    <Compile Include="UI\UIWidgets\UITextEntryLine.cs" />
+    <Compile Include="UI\UIWidgets\UITreeView.cs" />
+    <Compile Include="UI\UIWidgets\UIWindow.cs" />
+    <Compile Include="UI\UIWidgets\UIWindowDock.cs" />
+    <Compile Include="Visuals\VRenderer.cs" />
+    <Compile Include="Visuals\VRendererSimple.cs" />
+    <Compile Include="Visuals\VRenderLayer.cs" />
+    <Compile Include="Visuals\VRLDepth.cs" />
+    <Compile Include="Visuals\VRLMultiPass.cs" />
+    <Compile Include="Visuals\VRLSimple.cs" />
+    <Compile Include="Visuals\VRMultiPass.cs" />
+    <Compile Include="Visuals\VVisualizer.cs" />
+    <Compile Include="Visuals\VVSimple.cs" />
+    <Compile Include="Visuals\VVVBO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AssimpNet, Version=3.3.2.0, Culture=neutral, PublicKeyToken=3edc10cb77b1bca2, processorArchitecture=MSIL">
+      <HintPath>..\..\VividSolution\packages\AssimpNet.3.3.2\lib\net45\AssimpNet.dll</HintPath>
+    </Reference>
+    <Reference Include="irrKlang.NET4">
+      <HintPath>..\..\..\3rdparty\irrKlang.NET4.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\..\VividSolution\packages\OpenTK.3.0.0-pre\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=3.0.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\..\VividSolution\packages\OpenTK.GLControl.3.0.0-pre\lib\net20\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\..\VividSolution\packages\AssimpNet.3.3.2\build\AssimpNet.targets" Condition="Exists('..\..\VividSolution\packages\AssimpNet.3.3.2\build\AssimpNet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\VividSolution\packages\AssimpNet.3.3.2\build\AssimpNet.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\VividSolution\packages\AssimpNet.3.3.2\build\AssimpNet.targets'))" />
+  </Target>
+</Project>

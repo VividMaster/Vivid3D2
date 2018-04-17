@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VividEngine", "..\Vivid3D\Project1\VividEngine.csproj", "{073B5EC1-1159-4AA0-9D02-82919D7C9829}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{ECAED4D4-AE38-400A-B596-BE500A6DA438}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{8D641E02-541E-4F88-8682-4037E8158BCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{073B5EC1-1159-4AA0-9D02-82919D7C9829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073B5EC1-1159-4AA0-9D02-82919D7C9829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073B5EC1-1159-4AA0-9D02-82919D7C9829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073B5EC1-1159-4AA0-9D02-82919D7C9829}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{073B5EC1-1159-4AA0-9D02-82919D7C9829} = {ECAED4D4-AE38-400A-B596-BE500A6DA438}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C63A218E-49E5-466A-82B6-34C9AFDF9D65}
+	EndGlobalSection
+EndGlobal
